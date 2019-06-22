@@ -2,7 +2,7 @@
 
 Java specification implementation  
    
-[https://github.com/hubbledouble/json-merge-patch] (https://github.com/hubbledouble/json-merge-patch)    
+[https://github.com/hubbledouble/json-merge-patch](https://github.com/hubbledouble/json-merge-patch)    
    
 The library provides a single point of entry for patching an object:  
 **HTTPMethodProcessor#patch(String jsonRequest, T object)** where "jsonRequest" is a partial json request and "object" is a the object to be patched. 
