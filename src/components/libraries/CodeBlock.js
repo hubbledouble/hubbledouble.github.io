@@ -1,11 +1,11 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { twilight } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const CodeBlock = (props) => {
   const { language, value } = props;
   return (
-    <SyntaxHighlighter language={language} style={twilight}>
+    <SyntaxHighlighter language={language} style={atomDark}>
       {value}
     </SyntaxHighlighter>
   );
