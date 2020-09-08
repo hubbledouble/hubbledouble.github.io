@@ -7,7 +7,9 @@ import {
   MDBCollapse,
   MDBNavItem,
   MDBNavLink,
+  MDBContainer,
 } from "mdbreact";
+import { WiMoonWaningCrescent5, WiMoonWaxingCrescent1 } from "react-icons/wi";
 
 const NavHeader = () => {
   const [state, setState] = useState({
@@ -20,26 +22,32 @@ const NavHeader = () => {
   }
 
   return (
-    <MDBNavbar
-      className="position-absolute"
-      fixed="top"
-      dark
-      expand="md"
-      transparent
-    >
-      <MDBNavbarBrand href="/">HubbleDouble.com</MDBNavbarBrand>
-      {!state.isWideEnough && <MDBNavbarToggler onClick={onClick} />}
-      <MDBCollapse isOpen={state.collapse} navbar>
-        <MDBNavbarNav left>
-          <MDBNavItem>
-            <MDBNavLink to="/json-merge">JSON Merge</MDBNavLink>
-          </MDBNavItem>
-          {/* <MDBNavItem>
-            <MDBNavLink to="/thread-sync">Thread Sync</MDBNavLink>
-          </MDBNavItem> */}
-        </MDBNavbarNav>
-      </MDBCollapse>
-    </MDBNavbar>
+    <div>
+      <MDBContainer style={{ backgroundColor: "black" }} fluid>
+        <MDBContainer>
+          <MDBNavbar color="black" dark expand="md">
+            <MDBNavbarBrand href="/">HubbleDouble.com</MDBNavbarBrand>
+            {!state.isWideEnough && <MDBNavbarToggler onClick={onClick} />}
+            <MDBCollapse isOpen={state.collapse} navbar>
+              <MDBNavbarNav left>
+                <MDBNavItem>
+                  <MDBNavLink to="/json-merge">
+                    <WiMoonWaningCrescent5 /> merge & patch{" "}
+                    <WiMoonWaxingCrescent1 />
+                  </MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                  <MDBNavLink to="/thread-sync">
+                    <WiMoonWaningCrescent5 />
+                    process synchronization <WiMoonWaxingCrescent1 />
+                  </MDBNavLink>
+                </MDBNavItem>
+              </MDBNavbarNav>
+            </MDBCollapse>
+          </MDBNavbar>
+        </MDBContainer>
+      </MDBContainer>
+    </div>
   );
 };
 export default NavHeader;
