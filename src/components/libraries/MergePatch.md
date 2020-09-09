@@ -1,7 +1,8 @@
 ## Merge & Patch
 
 *Java merge & patch implementation on JSON messages*  
-*(Source code : [https://github.com/hubbledouble/json-merge-patch](https://github.com/hubbledouble/json-merge-patch))*
+*(Source code : [https://github.com/hubbledouble/json-merge-patch](https://github.com/hubbledouble/json-merge-patch))*   
+*(Example code : [https://github.com/hubbledouble/json-merge-patch-example](https://github.com/hubbledouble/json-merge-patch-example))*
 ___
 &nbsp;  
 ## Brief description
